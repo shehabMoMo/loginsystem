@@ -1,0 +1,101 @@
+:root{
+    --info-color: #17A2B8;
+}
+.bg-blueblack{
+    background-color: #24353F;
+}
+.main-font{
+    font-family: sans-serif;
+}
+.w-60{
+    width: 65%;
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: underline;
+}
+.login-container{
+    box-shadow: 0px 0px 20px 9px #00000047;
+}
+input::placeholder{
+    color: rgba(255, 255, 255, 0.671) !important;
+}
+.text-info-mine{
+    color: var(--info-color);
+}
+.btn-outline-info-mine{
+    border: var(--info-color) solid 1px;
+    background-color: transparent;
+}
+.btn-outline-info-mine:hover{
+    color: #fff;
+    background-color: var(--info-color);
+}
+form input{
+    background-color: transparent !important;
+    box-shadow: none !important;
+    border-color: rgba(255, 255, 255, 0.671) !important;
+    color: white !important;
+}
+form input:focus{
+    border-color: var(--info-color) !important;
+}
+/* modal box */
+.modelBox{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.32);
+    z-index: 999;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+#innerBox{
+    width: 38%;
+    height: 300px;
+    background-color: #fff;
+    padding: 40px 20px;
+}
+.dot-color{
+    background-color: #F15F5D;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    position: relative;
+}
+.dot-color::before{
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    top: 0px;
+    left: 30px;
+    background-color: #FEBE2E;
+}
+.dot-color::after{
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    top: 0px;
+    left: 60px;
+    background-color: #4DB748;
+}
+.innerbox-body ul{
+    font-size: 18px;
+}
+.closeEl{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    margin: 38px 20px;
+    cursor: pointer;
+}

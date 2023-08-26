@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="">
+    <div class="bg-blueblack vh-100 p-5">
+        <div class="login-container py-4 px-5 text-center w-60 mx-auto main-font">
+            <h1 class="text-info-mine my-3">Smart Login System</h1>
+            <form>
+                <input id="nameSignUpEl" type="text" class="form-control mb-3" placeholder="Enter your name">
+                <p id="alertName" class="alert alert-primary d-none" role="alert">Enter name must contain at least 3 to 10 characters</p>
+                <input id="emailSignUpEl" type="text" class="form-control mb-3" placeholder="Enter your email">
+                <p id="alertEmail" class="alert alert-primary d-none" role="alert">Enter valide email</p>
+                <input id="passwordSignUpEl" type="password" class="form-control mb-3" placeholder="Enter your password">
+                <p id="alertPassword" class="alert alert-primary d-none" role="alert">Enter password must contain at least 8 to 20 characters</p>
+                <p id="successAlert" class="mb-3 text-success d-none">Success</p>
+                <p id="requirAlert"  class="mb-3 text-danger d-none">All inputs is required</p>
+                <button id="signUpBtn" type="button"
+                    class="btn btn-outline-info-mine w-100 text-info-mine my-3">Login</button>
+            </form>
+            <p class="text-white mb-5">Don’t have an account?<a href="index.html" id="signInPage" class="main-font d-none"> Sign In</a> </p>
+        </div>
+    </div>
+    <div id="isvalidmodel" class="modelBox">
+        <div id="innerBox" class=" rounded-2 position-relative">
+            <i id="validCloseEl" class="closeEl fa fa-2x fa-xmark"></i>
+            <div class="dot-color"></div>
+            <div class="innerbox-body Caption-font">
+                <h5 class="fw-semibold mt-5 mb-3">Site Name , Email or password is not valid, Please follow the rules below :</h5>
+                <ul class="list-unstyled">
+                    <li class="pb-3"><i class="fa-regular fa-circle-right text-danger"></i> Site name must contain at least 3 characters</li>
+                    <li><i class="fa-regular fa-circle-right text-danger"></i> Right a valid email</li>
+                    <li><i class="fa-regular fa-circle-right text-danger"></i> Site password must contain at least 8 characters or number</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div id="isExistmodel" class="modelBox">
+        <div id="innerBox" class=" rounded-2 position-relative">
+            <i id="existCloseEl" class="closeEl fa fa-2x fa-xmark"></i>
+            <div class="dot-color"></div>
+            <div class="innerbox-body Caption-font">
+                <h5 class="fw-semibold mt-5 mb-3">This email is exist</h5>
+            </div>
+        </div>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
